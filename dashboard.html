@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MSF - Dashboard</title>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- End of Google Font -->
+
+    <!-- Style link -->
+    <link rel="stylesheet" href="./styles/dashboard.css" />
+    <!-- End of Style Link -->
+  </head>
+  <body>
+    <!-- Dashboard Layout -->
+    <div class="dashboard-container">
+      <!-- Sidebar Menu -->
+      <aside class="sidebar">
+        <h2>MSF Dashboard</h2>
+        <ul>
+          <li class="menu-item"><a href="#">Overview</a></li>
+          <li class="menu-item"><a href="#">Savings</a></li>
+          <li class="menu-item"><a href="#">Investments</a></li>
+          <li class="menu-item"><a href="#">Analytics</a></li>
+          <li class="menu-item"><a href="#">Settings</a></li>
+          <li class="menu-item"><a href="index.html">Logout</a></li>
+        </ul>
+      </aside>
+      <!-- End of Sidebar Menu -->
+
+      <!-- Main Content Area -->
+      <main class="main-content">
+        <!-- Toolbar with page title and logout button -->
+        <div class="toolbar">
+          <h1>Welcome, User!</h1>
+          <button
+            class="logout-btn"
+            onclick="window.location.href='login.html';"
+          >
+            Logout
+          </button>
+        </div>
+        <!-- End of Toolbar with page title and logout button -->
+
+        <!-- Charts Section -->
+        <div class="charts-container">
+          <!-- Pie Chart -->
+          <div class="chart-box">
+            <h3>Investment Distribution</h3>
+          </div>
+          <!-- End of Pie Chart -->
+
+          <!-- Bar Chart -->
+          <div class="chart-box">
+            <h3>Monthly Savings Growth</h3>
+          </div>
+          <!-- Bar Chart -->
+        </div>
+        <!-- End of Charts Section -->
+
+        <!-- Additional Features: Recent Activity Section -->
+        <div class="recent-activity">
+          <h3>Recent Activity</h3>
+          <p>- $500 added to Savings Account on October 18, 2024</p>
+          <p>- $200 withdrawn from Investment Portfolio on October 10, 2024</p>
+          <p>- $150 bonus added to your account on October 05, 2024</p>
+          <br />
+          <p style="display: inline">loading more...</p>
+          <div class="spinner"></div>
+        </div>
+        <!-- End of Additional Features: Recent Activity Section -->
+      </main>
+      <!-- Main Content Area -->
+    </div>
+    <!-- End of Dashboard Layout -->
+  </body>
+</html>

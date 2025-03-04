@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MSF - Sign Up</title>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- End of Google Fonts -->
+
+    <!-----connections to the styles------------------>
+    <link rel="stylesheet" href="./styles/login.css" />
+    <!-- end of connections to the styles -->
+  </head>
+  <body>
+    <!-- Sign Up Form -->
+    <div class="signup-container">
+      <h1>Create Your Account</h1>
+      <p>Start growing your money today by signing up!</p>
+      <form id="signupForm">
+        <div class="form-group">
+          <label for="fullname">Full Name</label>
+          <input
+            type="text"
+            id="fullname"
+            name="fullname"
+            placeholder="Enter your full name"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email address"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Create a password"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="confirmPassword">Confirm Password</label>
+          <input
+            type="password"
+            id="confirmPassword"
+            name="confirmPassword"
+            placeholder="Confirm your password"
+            required
+          />
+        </div>
+
+        <button type="submit" class="signup-btn" id="signupButton">
+          Sign Up
+        </button>
+      </form>
+
+      <a href="index.html" class="back-btn">Back to Home</a>
+    </div>
+
+    <!-- End of Signup Form -->
+
+    <!-- JavaScript File -->
+    <script src="./login.js"></script>
+    <!-- End of Javascript File -->
+  </body>
+</html>

@@ -1,0 +1,184 @@
+/* Header Section */
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body {
+ font-family: 'Poppins', sans-serif;
+ background-color: #f4f4f4;
+ color: #333;
+}
+
+a {
+ text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+p {
+ margin-bottom: 15px;
+}
+
+header {
+ background-color: #28a745;
+ color: white;
+ padding: 5vh 0;
+ text-align: center;
+ position: sticky;
+ top: 0;
+ width: 100%;
+ z-index: 10;
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar {
+ padding: 10px;
+ border-radius: 40px;
+ border: 1px solid #ddd;
+ color: #888;
+}
+
+/* End of Header Section */
+
+/* Sidebar Section */
+.sidebar {
+ width: 17vw;
+ height: 100vh;
+ background-color: #28a745;
+ padding-top: 5vh;
+ position: fixed;
+ color: white;
+ transition: width 0.3s ease;
+ font-size: 2.5vh;
+ z-index: 5;
+}
+  
+.sidebar>h2 {
+ text-align: center;
+}
+  
+.sidebar>a {
+ color: white;
+ justify-content: center;
+ display: flex;
+}
+  
+.sidebar>a:hover {
+ color: lightgreen;
+}
+
+/* End of Sidebar Section */
+
+
+/* Content Section */
+.content {
+ padding: 3vh 2vw 0 19.5vw;
+}
+/* End of Content Section */
+
+/* Hero Section */
+.hero {
+ background-color: #28a745;
+ color: white;
+ padding: 60px;
+ border-radius: 10px;
+ text-align: center;
+}
+
+.hero h2 {
+ font-size: 40px;
+ margin-bottom: 20px;
+}
+
+.hero p {
+ font-size: 18px;
+ margin-bottom: 30px;
+}
+
+.hero button {
+ background-color: white;
+ color: #28a745;
+ padding: 12px 24px;
+ border: none;
+ border-radius: 5px;
+ cursor: pointer;
+ font-size: 16px;
+ transition: background-color 0.3s ease;
+}
+
+.join-btn:hover{
+ color: rgb(255, 255, 255);
+}
+
+/* End of Hero Section */
+
+/* Price Plans Section */
+.plans {
+ display: flex;
+ justify-content: space-evenly;
+ margin-top: 50px;
+ flex-wrap: wrap;
+}
+
+.plan {
+ background-color: white;
+ border-radius: 10px;
+ padding: 30px;
+ width: 22vw;
+ box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+ text-align: center;
+ margin-bottom: 20px;
+ transition: transform 0.3s;
+}
+
+.plan:hover {
+ transform: scale(1.05);
+}
+
+.plan h3 {
+ font-size: 150%;
+ justify-content: center;
+ display: flex;
+ color: #28a745;
+ margin-bottom: 15px;
+}
+
+.plan p {
+ font-size: 2.7vh;
+ color: #555;
+ margin-bottom: 5vh;
+ justify-content: center;
+ display: flex;
+}
+
+.join-btn {
+ background-color: #28a745;
+ color: white;
+ padding: 10% 15%;
+ border: none;
+ border-radius: 5px;
+ font-size: 100%;
+ cursor: pointer;
+ transition: background-color 0.3s linear;
+}
+
+.join-btn:hover {
+ background-color: #218838;
+}
+
+/* End of Price plans section */
+
+/* Footer Section */
+footer{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ padding: 1vh 2vw 0 18vw;
+ background: #28a745;
+ height: 10vh;
+ color: white;
+}
+/* End of Footer Section */
