@@ -9,28 +9,22 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
-    <!-- End of Google Font -->
 
     <!-- Style link -->
     <link rel="stylesheet" href="./styles/dashboard.css" />
-    <!-- End of Style Link -->
   </head>
   <body>
     <!-- Dashboard Layout -->
     <div class="dashboard-container">
-      <!-- Sidebar Menu -->
-      <aside class="sidebar">
-        <h2>MSF Dashboard</h2>
-        <ul>
-          <li class="menu-item"><a href="#">Overview</a></li>
-          <li class="menu-item"><a href="#">Savings</a></li>
-          <li class="menu-item"><a href="#">Investments</a></li>
-          <li class="menu-item"><a href="#">Analytics</a></li>
-          <li class="menu-item"><a href="#">Settings</a></li>
-          <li class="menu-item"><a href="index.html">Logout</a></li>
-        </ul>
-      </aside>
-      <!-- End of Sidebar Menu -->
+      <!-- navbar -->
+      <div class="navbar">
+        <a href="#">Overview</a> <br />
+        <a href="#">savings</a> <br />
+        <a href="#">Investments</a><br />
+        <a href="#">Analytics</a>
+        <a href="#">Settings</a>
+      </div>
+      <br />
 
       <!-- Main Content Area -->
       <main class="main-content">
@@ -44,7 +38,6 @@
             Logout
           </button>
         </div>
-        <!-- End of Toolbar with page title and logout button -->
 
         <!-- Charts Section -->
         <div class="charts-container">
@@ -52,15 +45,12 @@
           <div class="chart-box">
             <h3>Investment Distribution</h3>
           </div>
-          <!-- End of Pie Chart -->
 
           <!-- Bar Chart -->
           <div class="chart-box">
             <h3>Monthly Savings Growth</h3>
           </div>
-          <!-- Bar Chart -->
         </div>
-        <!-- End of Charts Section -->
 
         <!-- Additional Features: Recent Activity Section -->
         <div class="recent-activity">
@@ -72,10 +62,7 @@
           <p style="display: inline">loading more...</p>
           <div class="spinner"></div>
         </div>
-        <!-- End of Additional Features: Recent Activity Section -->
       </main>
-      <!-- Main Content Area -->
     </div>
-    <!-- End of Dashboard Layout -->
   </body>
 </html>

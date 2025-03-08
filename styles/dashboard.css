@@ -1,4 +1,9 @@
 /* Global Styles */
+
+:root {
+ --overallColor: #28a745
+}
+
 * {
  margin: 0;
  padding: 0;
@@ -7,49 +12,36 @@
 
 body {
  font-family: "Poppins", sans-serif;
- background-color: #f4f4f4;
-}
-/* End of Global Styles */
-
-/* Sidebar Menu */
-.sidebar {
- width: 19vw;
- height: 100vh;
- background-color: #28a745;
- padding-top: 5vh;
- position: fixed;
- color: white;
- transition: width 0.3s ease;
- font-size: 2.5vh;
- z-index: 5;
+ background-color: var(--overallColor);
 }
 
-.sidebar h2 {
- text-align: center;
- font-size: 2.8vh;
-}
-
-.menu-item {
- list-style: none;
- margin-bottom: 20px;
-}
-
-.menu-item>a {
- color: white;
- justify-content: center;
+.navbar {
+ background: var(--overallColor);
  display: flex;
- padding-top: 20%;
- text-decoration: none;
+ flex-wrap: wrap;
+ justify-content: center;
+ padding-top: 3vh;
+ gap: 2.5vw;
 }
 
-.menu-item a:hover {
-color: lightgreen;
+.navbar a {
+ text-transform: uppercase;
+ font-weight: bold;
+ font-size: 2.4vh;
+ color: white;
+ transition-property: outline-offset;
+ transition-duration: 0.1s;
+ transition-timing-function: linear;
 }
-/* End of Sidebar Menu */
+
+.navbar>a:hover {
+ outline: 2px solid white;
+ outline-offset: 3px;
+}
 
 /* Main Content Area */
 .main-content {
- padding: 1vh 2vw 0 22vw;
+ padding: 4vh;
  background-color: #fff;
  height: 100vh;
 }
@@ -57,8 +49,9 @@ color: lightgreen;
 .toolbar {
  padding-top: 3vh;
  display: flex;
- justify-content: space-between;
- margin-bottom: 7%;
+ justify-content: center;
+ gap: 30vw;
+ margin-bottom: 3%;
 }
 
 .toolbar h1 {
@@ -67,7 +60,7 @@ color: lightgreen;
 }
 
 .logout-btn {
- background-color: #28a745;
+ background-color: var(--overallColor);
  color: white;
  padding: 0 20px;
  margin-top: -1.5vh;
@@ -82,18 +75,17 @@ color: lightgreen;
 .toolbar .logout-btn:hover {
 color: lightgreen;
 }
-/* End of Main Content Area */
 
 /* Charts Section */
 .charts-container {
  display: flex;
- justify-content: space-between;
+ justify-content: space-around;
  flex-wrap: wrap;
- padding-bottom: 1vh;
 }
 
 .chart-box {
  width: 45%;
+ max-width: 100%;
  background-color: white;
  padding: 5vh;
  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -108,7 +100,7 @@ color: lightgreen;
  width: 20px;
  height: 20px;
  border: 3px solid rgb(175, 173, 173);
- border-top-color: #28a745;
+ border-top-color: var(--overallColor);
  border-radius: 50%;
  animation-name: spin;
  animation-duration: 0.7s;
@@ -124,12 +116,3 @@ color: lightgreen;
   transform: rotate(360deg);
  }
 }
-/* End of Recent Activity Loading Section */
-
-/* Responsive Design */
-@media screen and (max-width: 768px) {
- .chart-box {
-  width: 100%;
- }
-}
-/* End of Responsive Design */
