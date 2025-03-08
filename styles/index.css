@@ -1,4 +1,8 @@
-/* Header Section */
+/* General Styles */
+:root{
+ --overallColor:#28a745
+}
+
 * {
  margin: 0;
  padding: 0;
@@ -15,93 +19,88 @@ a {
  text-decoration: none;
 }
 
-h1,
-h2,
-h3,
-p {
- margin-bottom: 15px;
-}
 
+/* Header Section */
 header {
- background-color: #28a745;
+ background: var(--overallColor);
  color: white;
- padding: 5vh 0;
  text-align: center;
- position: sticky;
- top: 0;
+ position: fixed;
+ height: 10vh;
  width: 100%;
  z-index: 10;
  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.search-bar {
- padding: 10px;
- border-radius: 40px;
- border: 1px solid #ddd;
- color: #888;
-}
-
-/* End of Header Section */
-
-/* Sidebar Section */
-.sidebar {
- width: 17vw;
- height: 100vh;
- background-color: #28a745;
- padding-top: 5vh;
- position: fixed;
- color: white;
- transition: width 0.3s ease;
- font-size: 2.5vh;
- z-index: 5;
-}
-  
-.sidebar>h2 {
- text-align: center;
-}
-  
-.sidebar>a {
- color: white;
- justify-content: center;
+/* Navbar */
+.navbar {
  display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ padding-top: 3vh;
+ gap: 2.5vw;
 }
   
-.sidebar>a:hover {
- color: lightgreen;
+.navbar a {
+ text-transform: uppercase;
+ font-weight: bold;
+ font-size: 2.4vh;
+ color: white;
+ transition-property: outline-offset;
+ transition-duration: 0.1s;
+ transition-timing-function: linear;
+}
+  
+.navbar>a:hover {
+ outline: 2px solid white;
+ outline-offset: 3px;
 }
 
-/* End of Sidebar Section */
 
-
-/* Content Section */
-.content {
- padding: 3vh 2vw 0 19.5vw;
+/* Search Bar */
+.search-bar {
+ padding-top: 14vh; 
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ align-items: center;
 }
-/* End of Content Section */
+
+/* Welcome Page */
+.welcome-page{
+ font-size: 5vh;
+ font-weight: bold;
+ text-transform: uppercase;
+ text-align: center;
+ margin-top: 5vh;
+ padding-bottom: 3vh;
+}
 
 /* Hero Section */
 .hero {
- background-color: #28a745;
+ background: var(--overallColor);
  color: white;
- padding: 60px;
- border-radius: 10px;
+ margin: 3vh;
+ margin-bottom: 0;
+ padding: 4vh;
+ border-radius: 15px;
  text-align: center;
 }
 
 .hero h2 {
  font-size: 40px;
- margin-bottom: 20px;
+ padding-bottom: 1vh ;
 }
 
 .hero p {
  font-size: 18px;
- margin-bottom: 30px;
+ padding-bottom: 1vh;
 }
 
 .hero button {
  background-color: white;
- color: #28a745;
- padding: 12px 24px;
+ color: var(--overallColor);
+ padding: 2vh 4vw;
  border: none;
  border-radius: 5px;
  cursor: pointer;
@@ -109,29 +108,45 @@ header {
  transition: background-color 0.3s ease;
 }
 
-.join-btn:hover{
- color: rgb(255, 255, 255);
+.join-btn1 {
+ background-color: #28a745;
+ color: white;
+ padding: 2vh 3vw;
+ border: none;
+ border-radius: 5px;
+ font-size: 15px;
+ cursor: pointer;
+ transition: background-color 0.3s linear;
 }
 
-/* End of Hero Section */
+.join-btn1:hover{
+ background: var(--overallColor);
+ color: white;
+ font-weight: bold;
+}
 
 /* Price Plans Section */
 .plans {
  display: flex;
  justify-content: space-evenly;
- margin-top: 50px;
  flex-wrap: wrap;
 }
 
 .plan {
+ margin-top: 12vh;
  background-color: white;
- border-radius: 10px;
- padding: 30px;
- width: 22vw;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ border-radius: 15px;
+ padding: 3vh;
+ margin-bottom: 0;
+ width: 25vw;
  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
  text-align: center;
- margin-bottom: 20px;
- transition: transform 0.3s;
+ transition-property: transform;
+ transition-duration: 0.2s;
+ transition-timing-function: linear;
 }
 
 .plan:hover {
@@ -139,46 +154,43 @@ header {
 }
 
 .plan h3 {
- font-size: 150%;
+ font-size: 3vh;
  justify-content: center;
  display: flex;
+ flex-wrap: wrap;
  color: #28a745;
  margin-bottom: 15px;
 }
 
 .plan p {
- font-size: 2.7vh;
  color: #555;
  margin-bottom: 5vh;
- justify-content: center;
- display: flex;
 }
 
 .join-btn {
  background-color: #28a745;
  color: white;
- padding: 10% 15%;
+ padding: 2vh 3vw;
  border: none;
  border-radius: 5px;
- font-size: 100%;
+ font-size: 15px;
  cursor: pointer;
  transition: background-color 0.3s linear;
 }
 
 .join-btn:hover {
- background-color: #218838;
+ background-color: white;
+ color: var(--overallColor);
+ font-weight: bold;
 }
-
-/* End of Price plans section */
 
 /* Footer Section */
 footer{
+ margin-top: 15vh;
  display: flex;
  justify-content: center;
  align-items: center;
- padding: 1vh 2vw 0 18vw;
  background: #28a745;
  height: 10vh;
  color: white;
 }
-/* End of Footer Section */
