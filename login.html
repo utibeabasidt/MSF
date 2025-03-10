@@ -50,25 +50,24 @@
     <!-- JavaScript -->
     <script>
       // JavaScript Validation
-      function validateLogin(email, password) {
-        // Regular expression for a basic email validation
-        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-        if (!emailPattern.test(email)) {
-          return "Invalid email format";
-        }
-
-        if (password.length < 6) {
-          return "Password must be at least 6 characters long";
-        }
-
-        return "Login successful";
-      }
-
-      // Example usage:
-      const email = "test@example.com";
-      const password = "password123";
-      console.log(validateLogin(email, password));
+      document
+        .getElementById("loginForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          const email = document.getElementById("email").value;
+          const password = document.getElementById("password").value;
+          // Simple validation
+          if (
+            email === "" ||
+            password === "" ||
+          ) {
+            alert("Please fill in all fields.");
+          } else {
+            alert("login successful!");
+            // Redirect or handle the login logic
+            window.location.href = "dashboard.html"; // Redirect to a dashboard
+          }
+        });
     </script>
   </body>
 </html>
