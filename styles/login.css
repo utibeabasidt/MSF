@@ -64,7 +64,6 @@ input[type="password"] {
 }
 
 .login-btn {
- margin-left: 40px;
  float: left;
  width: 30%;
  max-width: 150px;
@@ -84,7 +83,6 @@ input[type="password"] {
 
 .back-btn {
  margin-top: 15px;
- margin-right: 40px;
  float: right;
  text-decoration: none;
  color: #28a745;

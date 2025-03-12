@@ -27,7 +27,7 @@ body {
 .navbar a {
  text-transform: uppercase;
  font-weight: bold;
- font-size: 2.4vh;
+ font-size: 100%;
  color: white;
  transition-property: outline-offset;
  transition-duration: 0.1s;
@@ -55,19 +55,20 @@ body {
 }
 
 .toolbar h1 {
- font-size: 4vh;
+ font-size: 170%;
  color: #28a745;
 }
 
 .logout-btn {
  background-color: var(--overallColor);
  color: white;
- padding: 0 20px;
+ padding: 1px 4%;
  margin-top: -1.5vh;
  border: none;
  border-radius: 5px;
  cursor: pointer;
  display: flex;
+ flex-wrap: wrap;
  align-items: center;
  justify-content: center;
 }
@@ -87,12 +88,15 @@ color: lightgreen;
  width: 45%;
  max-width: 100%;
  background-color: white;
- padding: 5vh;
+ height: 15vh;
  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
  border-radius: 10px;
  margin-bottom: 40px;
+ padding: 5%;
+ display: flex;
+ flex-wrap: wrap;
+ font-size: 100%;
 }
-/* End of Charts Section */
 
 /* Recent Activity Loading Section */
 .spinner {

@@ -38,13 +38,13 @@ header {
  flex-wrap: wrap;
  justify-content: center;
  padding-top: 3vh;
- gap: 2.5vw;
+ gap: 2vw;
 }
   
 .navbar a {
  text-transform: uppercase;
  font-weight: bold;
- font-size: 2.4vh;
+ font-size: 100%;
  color: white;
  transition-property: outline-offset;
  transition-duration: 0.1s;
@@ -53,7 +53,7 @@ header {
   
 .navbar>a:hover {
  outline: 2px solid white;
- outline-offset: 3px;
+ outline-offset: 1vh;
 }
 
 
@@ -81,20 +81,20 @@ header {
  background: var(--overallColor);
  color: white;
  margin: 3vh;
- margin-bottom: 0;
+ margin-bottom: -5vh;
  padding: 4vh;
  border-radius: 15px;
  text-align: center;
 }
 
 .hero h2 {
- font-size: 40px;
- padding-bottom: 1vh ;
+ font-size: 230%;
+ padding-bottom: 5vh ;
 }
 
 .hero p {
- font-size: 18px;
- padding-bottom: 1vh;
+ font-size: 100%;
+ padding-bottom: 5vh;
 }
 
 .hero button {
@@ -120,8 +120,7 @@ header {
 }
 
 .join-btn1:hover{
- background: var(--overallColor);
- color: white;
+ text-decoration: underline;
  font-weight: bold;
 }
 
@@ -130,17 +129,16 @@ header {
  display: flex;
  justify-content: space-evenly;
  flex-wrap: wrap;
+ padding-top: 15vh;
 }
 
 .plan {
- margin-top: 12vh;
  background-color: white;
  display: flex;
  flex-wrap: wrap;
  justify-content: center;
  border-radius: 15px;
  padding: 3vh;
- margin-bottom: 0;
  width: 25vw;
  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
  text-align: center;
@@ -179,9 +177,21 @@ header {
 }
 
 .join-btn:hover {
- background-color: white;
- color: var(--overallColor);
+ text-decoration: underline;
  font-weight: bold;
+}
+
+/* About */
+#about{
+ text-align: center;
+ padding-top: 10vh;
+}
+
+/* Contact */
+#contact{
+ margin: -10vh;
+ text-align: center;
+ padding-top: 10vh;
 }
 
 /* Footer Section */
@@ -192,5 +202,6 @@ footer{
  align-items: center;
  background: #28a745;
  height: 10vh;
+ width: 100%;
  color: white;
 }
