@@ -1,6 +1,6 @@
 /* General Styles */
-:root{
- --overallColor:#28a745
+:root {
+ --overallColor: #28a745
 }
 
 * {
@@ -19,17 +19,16 @@ a {
  text-decoration: none;
 }
 
-
 /* Header Section */
 header {
- background: var(--overallColor);
+ background: #28a745cf;
  color: white;
  text-align: center;
  position: fixed;
  height: 10vh;
  width: 100%;
  z-index: 10;
- box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
 }
 
 /* Navbar */
@@ -40,7 +39,7 @@ header {
  padding-top: 3vh;
  gap: 2vw;
 }
-  
+
 .navbar a {
  text-transform: uppercase;
  font-weight: bold;
@@ -50,16 +49,15 @@ header {
  transition-duration: 0.1s;
  transition-timing-function: linear;
 }
-  
+
 .navbar>a:hover {
  outline: 2px solid white;
- outline-offset: 1vh;
+ outline-offset: 0.7vh;
 }
-
 
 /* Search Bar */
 .search-bar {
- padding-top: 14vh; 
+ padding-top: 14vh;
  display: flex;
  flex-wrap: wrap;
  justify-content: center;
@@ -67,7 +65,7 @@ header {
 }
 
 /* Welcome Page */
-.welcome-page{
+.welcome-page {
  font-size: 5vh;
  font-weight: bold;
  text-transform: uppercase;
@@ -85,11 +83,23 @@ header {
  padding: 4vh;
  border-radius: 15px;
  text-align: center;
+ animation-name: hero;
+ animation-iteration-count: 1;
+ animation-duration: 1.5s;
+}
+
+@keyframes hero {
+ 0%{
+  transform: translateX(-1000px);
+ }
+  100% {
+   transform: translateX(0);
+  }
 }
 
 .hero h2 {
  font-size: 230%;
- padding-bottom: 5vh ;
+ padding-bottom: 5vh;
 }
 
 .hero p {
@@ -119,7 +129,7 @@ header {
  transition: background-color 0.3s linear;
 }
 
-.join-btn1:hover{
+.join-btn1:hover {
  text-decoration: underline;
  font-weight: bold;
 }
@@ -131,6 +141,7 @@ header {
  flex-wrap: wrap;
  padding-top: 15vh;
 }
+
 
 .plan {
  background-color: white;
@@ -182,20 +193,20 @@ header {
 }
 
 /* About */
-#about{
+#about {
  text-align: center;
  padding-top: 10vh;
 }
 
 /* Contact */
-#contact{
- margin: -10vh;
+#contact {
+ margin-top: -10vh;
  text-align: center;
  padding-top: 10vh;
 }
 
 /* Footer Section */
-footer{
+footer {
  margin-top: 15vh;
  display: flex;
  justify-content: center;

@@ -51,7 +51,7 @@ body {
  display: flex;
  justify-content: center;
  gap: 30vw;
- margin-bottom: 3%;
+ margin-bottom: 10vh;
 }
 
 .toolbar h1 {
@@ -65,7 +65,7 @@ body {
  padding: 1px 4%;
  margin-top: -1.5vh;
  border: none;
- border-radius: 5px;
+ border-radius: 10px;
  cursor: pointer;
  display: flex;
  flex-wrap: wrap;
@@ -82,6 +82,7 @@ color: lightgreen;
  display: flex;
  justify-content: space-around;
  flex-wrap: wrap;
+ margin-bottom: 3vh;
 }
 
 .chart-box {
