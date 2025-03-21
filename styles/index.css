@@ -1,218 +1,219 @@
 /* General Styles */
 :root {
- --overallColor: #28a745
+    --overallColor: #28a745
 }
 
 * {
- margin: 0;
- padding: 0;
- box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
- font-family: 'Poppins', sans-serif;
- background-color: #f4f4f4;
- color: #333;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 a {
- text-decoration: none;
+    text-decoration: none;
 }
 
 /* Header Section */
 header {
- background: #28a745cf;
- color: white;
- text-align: center;
- position: fixed;
- height: 10vh;
- width: 100%;
- z-index: 10;
- box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+    background: #28a745cf;
+    color: white;
+    text-align: center;
+    position: fixed;
+    height: 10vh;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
 }
 
 /* Navbar */
 .navbar {
- display: flex;
- flex-wrap: wrap;
- justify-content: center;
- padding-top: 3vh;
- gap: 2vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 3vh;
+    gap: 2vw;
 }
 
 .navbar a {
- text-transform: uppercase;
- font-weight: bold;
- font-size: 100%;
- color: white;
- transition-property: outline-offset;
- transition-duration: 0.1s;
- transition-timing-function: linear;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 100%;
+    color: white;
+    transition-property: outline-offset;
+    transition-duration: 0.1s;
+    transition-timing-function: linear;
 }
 
 .navbar>a:hover {
- outline: 2px solid white;
- outline-offset: 0.7vh;
+    outline: 2px solid white;
+    outline-offset: 0.7vh;
 }
 
 /* Search Bar */
 .search-bar {
- padding-top: 14vh;
- display: flex;
- flex-wrap: wrap;
- justify-content: center;
- align-items: center;
+    padding-top: 14vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Welcome Page */
 .welcome-page {
- font-size: 5vh;
- font-weight: bold;
- text-transform: uppercase;
- text-align: center;
- margin-top: 5vh;
- padding-bottom: 3vh;
+    font-size: 5vh;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 5vh;
+    padding-bottom: 3vh;
 }
 
 /* Hero Section */
 .hero {
- background: var(--overallColor);
- color: white;
- margin: 3vh;
- margin-bottom: -5vh;
- padding: 4vh;
- border-radius: 15px;
- text-align: center;
- animation-name: hero;
- animation-iteration-count: 1;
- animation-duration: 1.5s;
+    background: var(--overallColor);
+    color: white;
+    margin: 3vh;
+    margin-bottom: -5vh;
+    padding: 4vh;
+    border-radius: 15px;
+    text-align: center;
+    animation-name: hero;
+    animation-iteration-count: 1;
+    animation-duration: 1.5s;
 }
 
 @keyframes hero {
- 0%{
-  transform: translateX(-1000px);
- }
-  100% {
-   transform: translateX(0);
-  }
+    0% {
+        transform: translateX(-1000px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
 }
 
 .hero h2 {
- font-size: 230%;
- padding-bottom: 5vh;
+    font-size: 230%;
+    padding-bottom: 5vh;
 }
 
 .hero p {
- font-size: 100%;
- padding-bottom: 5vh;
+    font-size: 100%;
+    padding-bottom: 5vh;
 }
 
 .hero button {
- background-color: white;
- color: var(--overallColor);
- padding: 2vh 4vw;
- border: none;
- border-radius: 5px;
- cursor: pointer;
- font-size: 16px;
- transition: background-color 0.3s ease;
+    background-color: white;
+    color: var(--overallColor);
+    padding: 2vh 4vw;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
 }
 
 .join-btn1 {
- background-color: #28a745;
- color: white;
- padding: 2vh 3vw;
- border: none;
- border-radius: 5px;
- font-size: 15px;
- cursor: pointer;
- transition: background-color 0.3s linear;
+    background-color: #28a745;
+    color: white;
+    padding: 2vh 3vw;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s linear;
 }
 
 .join-btn1:hover {
- text-decoration: underline;
- font-weight: bold;
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 /* Price Plans Section */
 .plans {
- display: flex;
- justify-content: space-evenly;
- flex-wrap: wrap;
- padding-top: 15vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-top: 15vh;
 }
 
 
 .plan {
- background-color: white;
- display: flex;
- flex-wrap: wrap;
- justify-content: center;
- border-radius: 15px;
- padding: 3vh;
- width: 25vw;
- box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
- text-align: center;
- transition-property: transform;
- transition-duration: 0.2s;
- transition-timing-function: linear;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 15px;
+    padding: 3vh;
+    width: 25vw;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition-property: transform;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
 }
 
 .plan:hover {
- transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 .plan h3 {
- font-size: 3vh;
- justify-content: center;
- display: flex;
- flex-wrap: wrap;
- color: #28a745;
- margin-bottom: 15px;
+    font-size: 3vh;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    color: #28a745;
+    margin-bottom: 15px;
 }
 
 .plan p {
- color: #555;
- margin-bottom: 5vh;
+    color: #555;
+    margin-bottom: 5vh;
 }
 
 .join-btn {
- background-color: #28a745;
- color: white;
- padding: 2vh 3vw;
- border: none;
- border-radius: 5px;
- font-size: 15px;
- cursor: pointer;
- transition: background-color 0.3s linear;
+    background-color: #28a745;
+    color: white;
+    padding: 2vh 3vw;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s linear;
 }
 
 .join-btn:hover {
- text-decoration: underline;
- font-weight: bold;
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 /* About */
 #about {
- text-align: center;
- padding-top: 10vh;
+    text-align: center;
+    padding-top: 10vh;
 }
 
 /* Contact */
 #contact {
- margin-top: -10vh;
- text-align: center;
- padding-top: 10vh;
+    margin-top: -10vh;
+    text-align: center;
+    padding-top: 10vh;
 }
 
 /* Footer Section */
 footer {
- margin-top: 15vh;
- display: flex;
- justify-content: center;
- align-items: center;
- background: #28a745;
- height: 10vh;
- width: 100%;
- color: white;
+    margin-top: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #28a745;
+    height: 10vh;
+    width: 100%;
+    color: white;
 }
